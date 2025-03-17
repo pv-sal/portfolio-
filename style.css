@@ -24,7 +24,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width:120%;
     padding: 1rem 25%;
     background-color: transparent;
     filter: drop-shadow(10px);
@@ -33,10 +33,11 @@ header{
     align-items: center;
     z-index: 100;
     background-image: url("images/user-1.jpg");
-    background-size: cover;
+    background-size:cover;
     border-radius: 4rem 4rem ;
-    border: 9px solid #ffffff22;
+    border: 7px solid #ffffff22;
     cursor: pointer;
+    font-size: 1rem;
     
 }
 header::shadow{
@@ -44,24 +45,23 @@ header::shadow{
     color: #ffffff;
 }
 .logo{
-    font-size: 3rem;
+    
     color: #b74b4b;
-    font-weight: 800;
+    font-weight: 400;
     cursor: pointer;
     transition: 0.5s ease;
+    font-size: 0rem;
 }
-.logo:hover{
-    transform: scale(1.1);
-}
+
 nav a{
-    font-size: 3rem;
+   
     color: white;
     margin-left: 4rem;
-    font-weight: 500;
+    font-weight: 100;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
     font-family: "Jersey 10", serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
 }
 nav a:hover,
@@ -440,18 +440,16 @@ span{
     background-color: #0c5405;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 30px;
     font-family: "Jersey 10", serif;
     box-shadow: 0  0 26px #036c0c;
+
 }
 
-.contact button:hover {
-    background-color: #941818;
-    box-shadow: 0  0 26px #941818;
-}
+
 .icons a{
     display: inline-flex;
     justify-content: center;
@@ -483,3 +481,174 @@ h6{
     width: 50px;
     margin: -35px;
 }
+/* From Uiverse.io by Pradeepsaranbishnoi */ 
+.voltage-button {
+    position: relative;
+  }
+  
+  .voltage-button button {
+    color: white;
+    
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 5rem;
+    
+    font-size: 2rem;
+    line-height: 3em;
+    letter-spacing: 1vh;
+    transition: background 0.3s;
+    width: 400px;
+    height: 100px;
+    font-size: larger;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    background-attachment: fixed;
+    background-position: 0cap;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #000000;
+    border-radius: 6rem;
+    font-size:3rem;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+    border: 3px solid #00ff44;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+  }
+  
+  .voltage-button button:hover {
+    cursor: pointer;
+    background: #00ff44;
+  }
+  
+  .voltage-button button:hover + svg, .voltage-button button:hover + svg + .dots {
+    opacity: 1;
+  }
+  
+  .voltage-button svg {
+    display: block;
+    position: absolute;
+    top: -0.75em;
+    left: -0.25em;
+    width: calc(100% + 0.5em);
+    height: calc(100% + 1.5em);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+    transition-delay: 0.1s;
+  }
+  
+  .voltage-button svg path {
+    stroke-dasharray: 100;
+    filter: url("#glow");
+  }
+  
+  .voltage-button svg path.line-1 {
+    stroke: #f6de8d;
+    stroke-dashoffset: 0;
+    animation: spark-1 3s linear infinite;
+  }
+  
+  .voltage-button svg path.line-2 {
+    stroke: #6bfeff;
+    stroke-dashoffset: 500;
+    animation: spark-2 3s linear infinite;
+  }
+  
+  .voltage-button .dots {
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition-delay: 0.4s;
+  }
+  
+  .voltage-button .dots .dot {
+    width: 1rem;
+    height: 1rem;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .voltage-button .dots .dot-1 {
+    top: 0;
+    left: 20%;
+    animation: fly-up 3s linear infinite;
+  }
+  
+  .voltage-button .dots .dot-2 {
+    top: 0;
+    left: 55%;
+    animation: fly-up 3s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  .voltage-button .dots .dot-3 {
+    top: 0;
+    left: 80%;
+    animation: fly-up 3s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  .voltage-button .dots .dot-4 {
+    bottom: 0;
+    left: 30%;
+    animation: fly-down 3s linear infinite;
+    animation-delay: 2.5s;
+  }
+  
+  .voltage-button .dots .dot-5 {
+    bottom: 0;
+    left: 65%;
+    animation: fly-down 3s linear infinite;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes spark-1 {
+    to {
+      stroke-dashoffset: -1000;
+    }
+  }
+  
+  @keyframes spark-2 {
+    to {
+      stroke-dashoffset: -500;
+    }
+  }
+  
+  @keyframes fly-up {
+    0% {
+      opacity: 0;
+      transform: translateY(0) scale(0.2);
+    }
+  
+    5% {
+      opacity: 1;
+      transform: translateY(-1.5rem) scale(0.4);
+    }
+  
+    10%, 100% {
+      opacity: 0;
+      transform: translateY(-3rem) scale(0.2);
+    }
+  }
+  
+  @keyframes fly-down {
+    0% {
+      opacity: 0;
+      transform: translateY(0) scale(0.2);
+    }
+  
+    5% {
+      opacity: 1;
+      transform: translateY(1.5rem) scale(0.4);
+    }
+  
+    10%, 100% {
+      opacity: 0;
+      transform: translateY(3rem) scale(0.2);
+    }
+  }
