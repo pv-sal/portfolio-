@@ -24,7 +24,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width:120%;
+    width:100%;
     padding: 1rem 25%;
     background-color: transparent;
     filter: drop-shadow(10px);
@@ -54,14 +54,14 @@ header::shadow{
 }
 
 nav a{
-   
+   font-size: 3rem;
     color: white;
     margin-left: 4rem;
-    font-weight: 100;
+    font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
     font-family: "Jersey 10", serif;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
 }
 nav a:hover,
